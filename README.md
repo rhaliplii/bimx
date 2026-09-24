@@ -57,7 +57,7 @@ Butoanele RO/EN duc la aceeași pagină în cealaltă limbă. Meniul „BIMX ACA
 | Traducerea EN a unei pagini bimx.md | `src/bimx-mirror/i18n/en.json` — apoi `make validate` |
 | Copia bimx.md | `make mirror` (descarcă din nou tot de pe bimx.md), apoi `make validate` arată textele noi de tradus |
 
-Deploy: conținutul folderului `dist/` se publică pe orice server static. Toate linkurile sunt relative, deci site-ul merge și dintr-un subdirector.
+Deploy: la fiecare push pe `main`, `.github/workflows/pages.yml` rulează `make check` și publică `dist/` pe GitHub Pages (https://rhaliplii.github.io/bimx/). Setare necesară o singură dată: Settings → Pages → Source: „GitHub Actions”. `dist/` merge pe orice server static: toate linkurile sunt relative, deci site-ul funcționează și dintr-un subdirector.
 
 ## Versiunea engleză
 
