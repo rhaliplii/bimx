@@ -1,0 +1,12 @@
+# build
+/dist/
+__pycache__/
+*.pyc
+
+# sistem / editor
+.DS_Store
+.vscode/
+.idea/
+
+# documente de lucru (audituri, corespondență): păstrate doar local, nu în repository
+/docs/

@@ -1,0 +1,375 @@
+{
+  "levels": {
+    "beg": {
+      "ro": "Începător",
+      "en": "Beginner"
+    },
+    "int": {
+      "ro": "Intermediar",
+      "en": "Intermediate"
+    },
+    "adv": {
+      "ro": "Avansat",
+      "en": "Advanced"
+    },
+    "pro": {
+      "ro": "Profesional",
+      "en": "Professional"
+    }
+  },
+  "live_label": {
+    "ro": "În desfășurare",
+    "en": "In progress"
+  },
+  "directions": {
+    "introducere-piata-de-capital": {
+      "tags": {
+        "ro": [
+          "Începător",
+          "Public larg"
+        ],
+        "en": [
+          "Beginner",
+          "General public"
+        ]
+      },
+      "icon": "<path d=\"M2 10l10-5 10 5-10 5-10-5z\"/><path d=\"M6 12v5c3 2.5 9 2.5 12 0v-5\"/>"
+    },
+    "cum-listezi-o-companie": {
+      "tags": {
+        "ro": [
+          "Intermediar",
+          "Emitenți",
+          "APL și stat"
+        ],
+        "en": [
+          "Intermediate",
+          "Issuers",
+          "Local authorities & state"
+        ]
+      },
+      "icon": "<path d=\"M3 21h18\"/><path d=\"M5 21V10l7-5 7 5v11\"/><path d=\"M9 21v-6h6v6\"/>"
+    },
+    "analiza-financiara": {
+      "tags": {
+        "ro": [
+          "Avansat",
+          "Investitori"
+        ],
+        "en": [
+          "Advanced",
+          "Investors"
+        ]
+      },
+      "icon": "<rect x=\"3\" y=\"3\" width=\"18\" height=\"18\" rx=\"3\"/><path d=\"M8 16v-4M12 16V8M16 16v-6\"/>"
+    },
+    "esg-finantare-verde": {
+      "tags": {
+        "ro": [
+          "Intermediar",
+          "Emitenți",
+          "Investitori"
+        ],
+        "en": [
+          "Intermediate",
+          "Issuers",
+          "Investors"
+        ]
+      },
+      "icon": "<path d=\"M11 20A7 7 0 014 13c0-5 4-9 16-9 0 12-4 16-9 16z\"/><path d=\"M4 20c4-4 7-7 11-10\"/>"
+    },
+    "femei-antreprenoare": {
+      "tags": {
+        "ro": [
+          "Program dedicat",
+          "Antreprenoare"
+        ],
+        "en": [
+          "Dedicated program",
+          "Women entrepreneurs"
+        ]
+      },
+      "icon": "<circle cx=\"12\" cy=\"8\" r=\"4\"/><path d=\"M5 21a7 7 0 0114 0\"/><path d=\"M17 3l1.5 1.5L21 2\"/>"
+    },
+    "infrastructura-bimx": {
+      "tags": {
+        "ro": [
+          "Profesional",
+          "Brokeri"
+        ],
+        "en": [
+          "Professional",
+          "Brokers"
+        ]
+      },
+      "icon": "<rect x=\"2\" y=\"4\" width=\"20\" height=\"13\" rx=\"2\"/><path d=\"M8 21h8M12 17v4\"/><path d=\"M6 13l3-3 3 2 5-5\"/>"
+    }
+  },
+  "home_courses": [
+    {
+      "code": "BA-101",
+      "level": "beg",
+      "ro": {
+        "description": "Ce este o bursă, cum se formează prețul și cine sunt participanții la piață.",
+        "format": "Online"
+      },
+      "en": {
+        "description": "What a stock exchange is, how prices are formed and who the market participants are.",
+        "format": "Online"
+      }
+    },
+    {
+      "code": "BA-102",
+      "level": "beg",
+      "ro": {
+        "description": "Diferențele dintre instrumente, randament, risc și modul în care se tranzacționează.",
+        "format": "Online"
+      },
+      "en": {
+        "description": "How the instruments differ, return, risk and how they are traded.",
+        "format": "Online"
+      }
+    },
+    {
+      "code": "BA-103",
+      "level": "beg",
+      "ro": {
+        "description": "Rolul societăților de investiții, documentele necesare și primul ordin de cumpărare.",
+        "format": "Online"
+      },
+      "en": {
+        "description": "The role of investment firms, the documents you need and your first buy order.",
+        "format": "Online"
+      }
+    },
+    {
+      "code": "BA-201",
+      "level": "int",
+      "ro": {
+        "description": "Pregătirea companiei, prospectul, admiterea la tranzacționare și obligațiile ulterioare.",
+        "format": "Hibrid"
+      },
+      "en": {
+        "description": "Preparing the company, the prospectus, admission to trading and ongoing obligations.",
+        "format": "Hybrid"
+      }
+    },
+    {
+      "code": "BA-202",
+      "level": "int",
+      "ro": {
+        "description": "Criterii de sustenabilitate, raportare ESG și emisiunea de instrumente pentru proiecte verzi.",
+        "format": "Online"
+      },
+      "en": {
+        "description": "Sustainability criteria, ESG reporting and issuing instruments for green projects.",
+        "format": "Online"
+      }
+    },
+    {
+      "code": "BA-203",
+      "level": "int",
+      "ro": {
+        "description": "Opțiuni de finanțare prin piața de capital, pregătirea pentru investitori și pașii următori.",
+        "format": "Workshop"
+      },
+      "en": {
+        "description": "Capital market financing options, getting investor-ready and next steps.",
+        "format": "Workshop"
+      }
+    },
+    {
+      "code": "BA-204",
+      "level": "int",
+      "ro": {
+        "description": "Cerințele concrete pentru acțiuni pe Piața Reglementată și MTF și traseul emitenților listați la BVM.",
+        "format": "Hibrid"
+      },
+      "en": {
+        "description": "Concrete requirements for shares on the Regulated Market and the MTF, and the path for BVM-listed issuers.",
+        "format": "Hybrid"
+      }
+    },
+    {
+      "code": "BA-205",
+      "level": "int",
+      "ro": {
+        "description": "Admiterea la BIMx a obligațiunilor municipale și a valorilor mobiliare de stat.",
+        "format": "Online"
+      },
+      "en": {
+        "description": "Admission of municipal bonds and government securities to BIMx.",
+        "format": "Online"
+      }
+    },
+    {
+      "code": "BA-301",
+      "level": "adv",
+      "ro": {
+        "description": "Bilanț, cont de profit și pierdere, fluxuri de numerar și indicatori-cheie de performanță.",
+        "format": "Online"
+      },
+      "en": {
+        "description": "Balance sheet, income statement, cash flows and key performance indicators.",
+        "format": "Online"
+      }
+    },
+    {
+      "code": "BA-302",
+      "level": "adv",
+      "ro": {
+        "description": "Multiplicatori de piață, fluxuri actualizate și compararea emitenților din același sector.",
+        "format": "Hibrid"
+      },
+      "en": {
+        "description": "Market multiples, discounted cash flows and comparing issuers in the same sector.",
+        "format": "Hybrid"
+      }
+    },
+    {
+      "code": "BA-303",
+      "level": "adv",
+      "ro": {
+        "description": "Alocarea activelor, diversificare, măsurarea riscului și rebalansarea portofoliului.",
+        "format": "Online"
+      },
+      "en": {
+        "description": "Asset allocation, diversification, measuring risk and rebalancing a portfolio.",
+        "format": "Online"
+      }
+    },
+    {
+      "code": "BA-401",
+      "level": "pro",
+      "ro": {
+        "description": "Modelul operațional BVB–BIMx–broker și ședința de tranzacționare, stare cu stare.",
+        "format": "Instruire pe platformă",
+        "live": true
+      },
+      "en": {
+        "description": "The BVB–BIMx–broker operating model and the trading session, phase by phase.",
+        "format": "Platform training",
+        "live": true
+      }
+    },
+    {
+      "code": "BA-402",
+      "level": "pro",
+      "ro": {
+        "description": "Condițiile, dosarul și examenul teoretic și tehnic pentru agenții de bursă.",
+        "format": "Online",
+        "live": true
+      },
+      "en": {
+        "description": "Eligibility, the application file and the theoretical and technical exam for exchange traders.",
+        "format": "Online",
+        "live": true
+      }
+    },
+    {
+      "code": "BA-403",
+      "level": "pro",
+      "ro": {
+        "description": "Ce se exersează în mediul de test ARENA înainte de prima ședință reală.",
+        "format": "Instruire pe platformă",
+        "live": true
+      },
+      "en": {
+        "description": "What to practise in the ARENA test environment before the first live session.",
+        "format": "Platform training",
+        "live": true
+      }
+    },
+    {
+      "code": "BA-404",
+      "level": "pro",
+      "ro": {
+        "description": "Cererea de admitere, contractul de participare și decontarea T+2 prin DCU.",
+        "format": "Online",
+        "live": true
+      },
+      "en": {
+        "description": "The membership application, the Participation Agreement and T+2 settlement through the DCU.",
+        "format": "Online",
+        "live": true
+      }
+    },
+    {
+      "code": "BA-405",
+      "level": "pro",
+      "ro": {
+        "description": "Participantul inițiator și intermediar și pregătirea emitenților de la BVM.",
+        "format": "Online",
+        "live": true
+      },
+      "en": {
+        "description": "Initiating and Intermediary Participants and preparing issuers from the BVM.",
+        "format": "Online",
+        "live": true
+      }
+    }
+  ],
+  "publications": [
+    {
+      "slug": "ghidul-investitorului-incepator",
+      "program": "introducere-piata-de-capital",
+      "ro": {
+        "title": "Ghidul investitorului începător",
+        "short": "Primii pași pe piața de capital, explicați pe înțelesul tuturor."
+      },
+      "en": {
+        "title": "The beginner investor's guide",
+        "short": "Your first steps on the capital market, explained in plain language."
+      }
+    },
+    {
+      "slug": "ghidul-de-listare",
+      "program": "cum-listezi-o-companie",
+      "ro": {
+        "title": "Ghidul de listare pentru emitenți",
+        "short": "Etapele, documentele și cerințele pentru admiterea la tranzacționare."
+      },
+      "en": {
+        "title": "The listing guide for issuers",
+        "short": "The steps, documents and requirements for admission to trading."
+      }
+    },
+    {
+      "slug": "esg-obligatiuni-verzi",
+      "program": "esg-finantare-verde",
+      "ro": {
+        "title": "ESG și obligațiunile verzi",
+        "short": "Standarde, bune practici și instrumente de finanțare verde."
+      },
+      "en": {
+        "title": "ESG and green bonds",
+        "short": "Standards, good practice and green financing instruments."
+      }
+    },
+    {
+      "slug": "cum-citesti-un-raport-financiar",
+      "program": "analiza-financiara",
+      "course": "BA-301",
+      "ro": {
+        "title": "Cum citești un raport financiar",
+        "short": "Indicatorii-cheie și interpretarea raportărilor emitenților."
+      },
+      "en": {
+        "title": "How to read a financial report",
+        "short": "Key indicators and how to interpret issuers' reports."
+      }
+    },
+    {
+      "slug": "ghidul-brokerului-bimx",
+      "program": "infrastructura-bimx",
+      "ro": {
+        "title": "Ghidul brokerului BIMx",
+        "short": "ARENA Trading, atestarea agenților de bursă, simulările și admiterea ca membru."
+      },
+      "en": {
+        "title": "The BIMx broker's guide",
+        "short": "ARENA Trading, exchange trader certification, simulations and exchange membership."
+      }
+    }
+  ]
+}
