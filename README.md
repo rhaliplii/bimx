@@ -25,9 +25,10 @@ src/
     data/market.json                       datele de piață demonstrative (ticker, top-uri, grafic)
     shared/                                wp-content, wp-includes (comune ambelor limbi)
   site/replica.js                          formulare și partajare fără serverul bimx.md
+  site/search.js                           căutarea din antet (index generat la build)
 tools/
   build.py                                 punctul de intrare al build-ului
-  sitegen/                                 codul build-ului (config, mirror, translate, shell, academy, detach, util, icons)
+  sitegen/                                 codul build-ului (config, mirror, translate, shell, academy, detach, search, util, icons)
   validate.py                              verifică lecțiile și că fiecare text bimx.md are traducere EN
   check_links.py                           verifică linkurile locale din dist/ și că nimic nu trimite spre bimx.md
   mirror_bimx.py                           descarcă din nou bimx.md în src/bimx-mirror/
@@ -71,7 +72,8 @@ Niciun link, buton, formular sau resursă din `dist/` nu trimite spre bimx.md (p
 
 - linkurile spre pagini copiate devin locale; linkurile rupte și pe bimx.md au echivalent local în `LINK_ALIASES` (ex. `/calendar` → `trading-calendar/`);
 - „Intra in cont” / „Log In” rămân în antet, dar la clic afișează „Această funcție nu este disponibilă momentan.” — autentificarea există doar pe serverul bimx.md;
-- căutarea, newsletterul și formularul de contact nu trimit date: afișează „Această funcție nu este disponibilă momentan.”;
+- newsletterul și formularul de contact nu trimit date: afișează „Această funcție nu este disponibilă momentan.”;
+- căutarea din antet funcționează local: la build, `tools/sitegen/search.py` indexează conținutul principal al paginilor (RO și EN, fără antet, subsol, secțiuni ascunse și pagini „În curând”) în `dist/assets/search/{ro,en}.js`, iar `src/site/search.js` caută în browser, fără diacritice, cu rezultatele pe măsură ce scrii;
 - butoanele de partajare (Facebook, X, LinkedIn, copiere link) folosesc adresa paginii curente.
 - tickerul, panoul de piață, Top Gainers/Losers și graficul folosesc datele demonstrative din `src/bimx-mirror/data/market.json` (ca pe bimx.md, unde sunt tot simulate); `market-data.js` le servește la adresele cerute de temă.
 
@@ -79,4 +81,4 @@ Adresele de email @bimx.md și mențiunile „bimx.md” din textul lecțiilor r
 
 ## Limitări
 
-Căutarea, formularele și autentificarea au nevoie de un server și nu funcționează în site-ul static. Câteva imagini din CSS-urile temei (slick, lightbox) lipsesc și de pe bimx.md; `check_links.py` le raportează doar ca avertisment.
+Formularele și autentificarea au nevoie de un server și nu funcționează în site-ul static. Câteva imagini din CSS-urile temei (slick, lightbox) lipsesc și de pe bimx.md; `check_links.py` le raportează doar ca avertisment.

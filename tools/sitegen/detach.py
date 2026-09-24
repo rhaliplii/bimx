@@ -4,7 +4,7 @@
 - „Log In” / „Intra in cont” rămân, dar nu mai duc la bimx.md: replica.js afișează un mesaj (autentificarea
   există doar pe serverul bimx.md);
 - <link> spre feed-uri, wp-json, xmlrpc și CSS-uri inexistente dispar, la fel scripturile emoji WordPress;
-- formularele (căutare, newsletter, contact) nu mai trimit nimic: replica.js afișează un mesaj;
+- formularele de newsletter și contact nu mai trimit nimic: replica.js afișează un mesaj; căutarea rulează local (search.py);
 - butoanele de partajare folosesc adresa paginii curente, nu bimx.md;
 - datele de piață (ticker, panou, top-uri, grafic) vin din snapshot-ul src/bimx-mirror/data/market.json.
 """
@@ -62,6 +62,8 @@ def detach_page(text, here):
 
     def form(m):
         tag = m.group(0)
+        if "search-form-custom" in tag:  # căutarea funcționează local (sitegen/search.py + src/site/search.js)
+            return re.sub(r'\saction="[^"]*"', ' action="#"', tag)[:-1].rstrip() + " data-search>"
         if ORIGIN.search(tag) or "wpcf7-form" in tag:
             tag = re.sub(r'\saction="[^"]*"', ' action="#"', tag)
             tag = tag[:-1].rstrip() + " data-unavailable>"

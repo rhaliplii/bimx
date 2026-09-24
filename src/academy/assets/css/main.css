@@ -184,7 +184,7 @@
   .audience .card:hover { border-color: var(--blue-30); box-shadow: 0 16px 40px rgba(26,34,102,.08); transform: translateY(-3px); }
   .audience .card h3 { font-size: 22px; line-height: 30px; font-weight: 600; margin: 22px 0 8px; }
   .audience .card p { color: var(--muted); font-size: 15px; line-height: 24px; margin-bottom: 20px; }
-  .audience .card ul { margin-top: auto; display: grid; gap: 10px; }
+  .audience .card ul { margin-top: 0; display: grid; gap: 10px; }
   .audience .card li { display: flex; gap: 10px; font-size: 14px; line-height: 20px; }
   .audience .card li::before {
     content: ""; flex: 0 0 18px; height: 18px; border-radius: 50%; background: var(--blue-10)
@@ -404,7 +404,7 @@
   .top_header .status .announce { color: var(--blue); font-weight: 500; }
   .top_header .status .announce:hover { text-decoration: underline; }
   .audience .card .note {
-    display: block; margin: -6px 0 20px; padding: 10px 12px; border-radius: 10px;
+    display: block; margin: 20px 0 0; padding: 10px 12px; border-radius: 10px;
     background: var(--blue-10); border: 1px solid var(--blue-20); font-size: 13px; line-height: 20px; color: var(--navy);
   }
   .audience .card .note strong { font-weight: 600; }

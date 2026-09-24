@@ -13,6 +13,7 @@ Surse (src/):
   academy/catalog.json              – direcții, cursuri, publicații de pe prima pagină
   academy/assets/                   – stilurile, scripturile și imaginile Academy
   site/replica.js                   – formulare și partajare fără serverul bimx.md
+  site/search.js                    – căutarea din antet (indexul se generează la build)
 
 Rezultat (dist/):
   index.html, <pagină>/            – bimx.md în română
@@ -27,6 +28,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 from sitegen.academy import build, load_programs  # noqa: E402
 from sitegen.detach import detach  # noqa: E402
+from sitegen.search import build_search  # noqa: E402
 from sitegen.config import ACADEMY_ASSETS, ACADEMY_SRC, DIST, LANGS, PUBLICATIONS, ROOT  # noqa: E402
 from sitegen.mirror import build_snapshot, localize_links  # noqa: E402
 from sitegen.shell import write_scoped_css  # noqa: E402
@@ -55,6 +57,8 @@ def main():
         localize_links(LANGS[lang]["out"], lang)
         print(f"Academy [{lang}]: {len(programs)} programe, {count} lecții, {len(PUBLICATIONS)} ghiduri.")
     print(f"Decuplare de bimx.md: {detach()} pagini ajustate.")
+    counts, injected = build_search()
+    print(f"Căutare: {counts['ro']} pagini RO, {counts['en']} pagini EN în index; scriptul adăugat pe {injected} pagini.")
     print(f"Gata. Deschideți {(DIST / 'index.html').relative_to(ROOT)}")
 
 
